@@ -1,0 +1,76 @@
+.transaction-history .transaction-filter {
+    margin: 3rem 0;
+}
+
+.transaction-history .transaction-filter label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 17px;
+    color: #00142A;
+}
+
+.transaction-history .transaction-filter select option,
+.transaction-history .transaction-filter select {
+    height: 38px;
+    background: #FFFFFF;
+    border-radius: 7.04516px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 21px;
+    color: #00142A;
+
+}
+
+.transaction-history .transaction-filter button {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #546BEA;
+    border-radius: 7.04516px;
+    padding: .8rem;
+    border: 1px solid #546BEA;
+    transition: 0.4s ease-in-out;
+}
+
+.transaction-history .transaction-filter button:hover {
+    color: #546BEA;
+    background-color: #fff;
+}
+
+.transaaction-detail thead tr th {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 18px;
+    color: #000000 !important;
+    min-width: 170px;
+}
+
+.transaaction-detail tbody tr {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.transaaction-detail tbody tr:after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: red;
+    right: 0;
+    top: 0;
+}
+
+.transaaction-detail tbody tr.label-cyan:after {
+    background-color: #4CD964;
+}
+
+.transaaction-detail tbody tr.label-red:after {
+    background-color: #FF3B30;
+}
+
+.transaaction-detail tbody tr:hover:after {
+    border-radius: 0 5px 5px 0;
+}

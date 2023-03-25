@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- FONTAWESOME CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- TOP BAR START -->
+        <header class="top-bar d-flex align-items-center">
+            <div class="top-logo">
+                <img src="assets/img/logo.svg" width="140px" alt="">
+            </div>
+
+            <div class="top-content d-flex align-items-center justify-content-between">
+                <h3 class="d-none d-sm-block">Dashboard</h3>
+                <div class="top-right d-flex align-items-center">
+                    <div class="top-search">
+                        <button class="d-lg-none search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="search-container d-none  d-lg-block">
+
+                            <form action="">
+                                <div class="form-group">
+                                    <div class="input-wrap">
+                                        <input type="search" class="form-control" placeholder="Search ">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="notification">
+                        <a href="">
+                            <i class="fa-regular fa-bell"></i>
+                        </a>
+                    </div>
+
+                    <div class="user">
+                        <a href="">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/user.svg" alt="">
+
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <button class="nav-toggle d-block d-xl-none" id="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </div>
+            </div>
+
+        </header>
+        <!-- TOP BAR END -->
+
+
+        <!-- MAIN SECTION START -->
+
+        <main class="main-area">
+
+            <!-- SIDE BAR SECTION START -->
+
+            <aside class="sidebar" id="sideNav">
+
+                <nav class="side-navbar">
+                    <ul>
+                        <li>
+                            <a href="" class="active"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> My Profile</a>
+                        </li>
+                        <li>
+                            <a href="wallet deposit.html"><i class="fa-solid fa-table-columns"></i> Wallet Deposit</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Exchange</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Transaction History</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Transfer Fund</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Chat </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Subscription Plan</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> My Subscription</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> withdrawal</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Affiliates</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Contact Support</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </aside>
+            <!-- SIDE BAR SECTION END -->
+
+            <!-- DASHBOARD SECTION START -->
+            <section class="dashboard">
+                <div class="heading">
+                    <h4>Welcome UserName...,</h4>
+                </div>
+
+                <!-- DASHBOARD TOP CARD -->
+                <section class="dash-top-card">
+                    <div class="row g-4 mb-4">
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 ">
+                            <div class="d-card">
+                                <div class="d-card-header">
+                                    <p>Portfolio balance</p>
+                                    <h5 class="c-green">USD 47044.86</h5>
+                                </div>
+
+                                <div class="d-card-footer">
+                                    <a href="">
+                                        Deposit
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 ">
+                            <div class="d-card">
+                                <div class="d-card-header">
+                                    <p>Locked USDFX</p>
+                                    <h5 class="c-green">USDFX 107942.24</h5>
+                                </div>
+
+                                <div class="d-card-footer">
+                                    <div class="text-end">
+                                        <p>Total Subscription</p>
+                                        <h6>$ 32300</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 ">
+                            <div class="d-card">
+                                <div class="d-card-header">
+                                    <p>Portfolio balance</p>
+                                    <h5 class="c-purple">USD 47044.86</h5>
+                                </div>
+
+                                <div class="d-card-footer">
+                                    <div class="text-end">
+                                        <p>Affiliate Rewards</p>
+                                        <h6>USDT 5587.87</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 ">
+                            <div class="d-card">
+                                <div class="d-card-header">
+                                    <p>Portfolio balance</p>
+                                    <h5 class="c-yellow">USD 47044.86</h5>
+                                </div>
+
+                                <div class="d-card-footer">
+                                    <a href="">
+                                        Convert
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row g-4 mb-4">
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 ">
+                            <div class="d-card">
+                                <div class="d-card-header">
+                                    <p>Loyalty Rewards Status</p>
+                                    <h5 class="c-orange">Starter</h5>
+                                </div>
+
+                                <div class="d-card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="plan-day">
+                                            <h2>45</h2>
+                                            <span>Days left</span>
+                                        </div>
+
+                                        <div class="play-badge text-center">
+                                            <img src="assets/img/badges.svg" alt="">
+                                            <a href="">Upgrade to silver</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3 ">
+                            <div class="d-card">
+                                <div class="d-card-header">
+                                    <p>Loyalty Rewards Status</p>
+                                    <h5 class="c-orange">Starter</h5>
+                                </div>
+
+                                <div class="d-card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="plan-day">
+                                            <h2>45<span>/Days left</span></h2>
+
+                                        </div>
+
+                                        <div class="play-badge text-center">
+                                            <img src="assets/img/badges.svg" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="d-card-footer">
+                                    <a href="">
+                                        Upgrade to silver
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+                <!-- DASHBOARD TOP CARD END -->
+
+
+                <!-- REFFERAL SECTION START -->
+                <div class="refferal-section">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 col-xl-4 left-content">
+                            <h3>Invite friends and Earn</h3>
+                            <p>met minim mollit non deserunt ullamco est sit aliqua
+                                dolor do amet sit aliqua dolor.</p>
+                            <a href="">Go to Refer & Earn Page</a>
+                        </div>
+
+                        <div class="col-md-7 col-lg-6 offset-lg-1 right-content">
+                            <div class="copy-link">
+                                <form>
+                                    <div class="form-group row g-2 g-sm-3">
+                                        <div class="col-8 col-sm-9">
+                                            <input class="form-control" type="text"
+                                                value="https://usdfx.org/ref/usdfx1234">
+                                        </div>
+                                        <div class="col-4 col-sm-3">
+                                            <button class="copy-btn">Copy link</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="share-link text-center row g-2 g-sm-3">
+                                <div class="col-4">
+                                    <a href=""><img src="assets/img/fb-icon.svg" alt=""> Share</a>
+                                </div>
+                                <div class="col-4">
+                                    <a href=""><img src="assets/img/tw.svg" alt=""> Tweet</a>
+                                </div>
+                                <div class="col-4">
+                                    <a href=""><img src="assets/img/linkedinsvg.svg" alt=""> Post</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- REFFERAL SECTION END -->
+
+                <!-- STATISTIC SECTION START -->
+                <section class="statistic">
+                    <h3>Statistics</h3>
+
+                    <div class="chart text-center">
+                        <!-- chart goes here -->
+
+                        <h4 class="text-muted">Chart goes here</h4>
+                    </div>
+                </section>
+                <!-- STATISTIC SECTION END -->
+
+                <!-- FEATURED SECTION START -->
+                <section class="feature">
+                    <div class="row">
+
+                        <div class="col-lg-5">
+                            <h3>Featured</h3>
+                            <div class="row">
+
+                                <div class="col-sm-6 my-3">
+                                    <div class="d-flex align-items-end justify-content-between ft-card">
+                                        <div class="crn">
+                                            <img src="assets/img/bit.svg" alt="">
+                                            <h5>Bitcoin</h5>
+                                            <p>BTC</p>
+                                        </div>
+
+                                        <h4><img src="assets/img/arrowUp.png" alt=""> 19.06%</h4>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 my-3">
+                                    <div class="d-flex align-items-end justify-content-between ft-card">
+                                        <div class="crn">
+                                            <img src="assets/img/eth.png" alt="">
+                                            <h5>Ethereum</h5>
+                                            <p>ETH</p>
+                                        </div>
+
+                                        <h4><img src="assets/img/arrowUp.png" alt=""> 19.06%</h4>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7 top-m">
+                            <h3>Top Movers</h3>
+                            <div class="row">
+
+                                <div class="col-sm-4 my-3">
+                                    <div class="d-flex align-items-end justify-content-between ft-card">
+                                        <div class="crn">
+                                            <img src="assets/img/bit.svg" alt="">
+                                            <h5>Bitcoin</h5>
+                                            <p>BTC</p>
+                                        </div>
+
+                                        <h4><img src="assets/img/arrowUp.png" alt=""> 19.06%</h4>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 my-3">
+                                    <div class="d-flex align-items-end justify-content-between ft-card">
+                                        <div class="crn">
+                                            <img src="assets/img/eth.png" alt="">
+                                            <h5>Ethereum</h5>
+                                            <p>ETH</p>
+                                        </div>
+
+                                        <h4><img src="assets/img/arrowUp.png" alt=""> 19.06%</h4>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 my-3">
+                                    <div class="d-flex align-items-end justify-content-between ft-card">
+                                        <div class="crn">
+                                            <img src="assets/img/bit.svg" alt="">
+                                            <h5>Bitcoin</h5>
+                                            <p>BTC</p>
+                                        </div>
+
+                                        <h4><img src="assets/img/arrowUp.png" alt=""> 19.06%</h4>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+                <!-- FEATURED SECTION END -->
+
+                <!-- DEPOSIT CARD SECTION START -->
+                <section class="deposit">
+                    <h2>FIXED TERM DEPOSIT</h2>
+                    <div class="row align-items-stretch">
+
+                        <div class="col-sm-6 col-lg-3 my-3">
+                            <div class="dp-card starter">
+                                <div class="dp-card-header d-flex align-items-center justify-content-between ">
+                                    <div class="dp-h-left">
+                                        <img src="assets/img/badge1.svg" alt="">
+                                        <h4>5%<span>/APY</span></h4>
+                                    </div>
+
+                                    <div class="dp-h-right">
+                                        <h4>Starter</h4>
+                                        <h2>90</h2>
+                                        <span>Days</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="dp-card-body">
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i> Earn 5% interest for 90 Days</li>
+                                        <li><i class="fa-solid fa-check"></i> Unlock your USDFX Monthly </li>
+                                        <li><i class="fa-solid fa-check"></i> Compounded Interest</li>
+                                        <li><i class="fa-solid fa-check"></i> Interest are paid in USDFX</li>
+                                    </ul>
+
+                                    <a href="" class="dp-card-btn">
+                                        Your Current Plan
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3 my-3">
+                            <div class="dp-card silver">
+                                <div class="dp-card-header d-flex align-items-center justify-content-between">
+                                    <div class="dp-h-left">
+                                        <img src="assets/img/badge2.svg" alt="">
+                                        <h4>10%<span>/APY</span></h4>
+                                    </div>
+
+                                    <div class="dp-h-right">
+                                        <h4>Silver</h4>
+                                        <h2>90</h2>
+                                        <span>Days</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="dp-card-body">
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i> Earn 10% interest for 180 Days</li>
+                                        <li><i class="fa-solid fa-check"></i> Unlock your USDFX Monthly </li>
+                                        <li><i class="fa-solid fa-check"></i> Compounded Interest</li>
+                                        <li><i class="fa-solid fa-check"></i> Interest are paid in USDFX</li>
+                                    </ul>
+
+                                    <a href="" class="dp-card-btn">
+                                        Your Current Plan
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3 my-3">
+                            <div class="dp-card gold">
+                                <div class="dp-card-header d-flex align-items-center justify-content-between">
+                                    <div class="dp-h-left">
+                                        <img src="assets/img/badge3.svg" alt="">
+                                        <h4>15%<span>/APY</span></h4>
+                                    </div>
+
+                                    <div class="dp-h-right">
+                                        <h4>Gold</h4>
+                                        <h2>90</h2>
+                                        <span>Days</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="dp-card-body">
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i> Earn 15% interest for 270 Days</li>
+                                        <li><i class="fa-solid fa-check"></i> Unlock your USDFX Monthly </li>
+                                        <li><i class="fa-solid fa-check"></i> Compounded Interest</li>
+                                        <li><i class="fa-solid fa-check"></i> Interest are paid in USDFX</li>
+                                    </ul>
+
+                                    <a href="" class="dp-card-btn">
+                                        Your Current Plan
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3 my-3">
+                            <div class="dp-card premium">
+                                <div class="dp-card-header d-flex align-items-center justify-content-between">
+                                    <div class="dp-h-left">
+                                        <img src="assets/img/badge4.svg" alt="">
+                                        <h4>20%<span>/APY</span></h4>
+                                    </div>
+
+                                    <div class="dp-h-right">
+                                        <h4>Premium</h4>
+                                        <h2>90</h2>
+                                        <span>Days</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="dp-card-body">
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i> Earn 20% interest for 365 Days</li>
+                                        <li><i class="fa-solid fa-check"></i> Unlock your USDFX Monthly </li>
+                                        <li><i class="fa-solid fa-check"></i> Compounded Interest</li>
+                                        <li><i class="fa-solid fa-check"></i> Interest are paid in USDFX</li>
+                                    </ul>
+
+                                    <a href="" class="dp-card-btn">
+                                        Your Current Plan
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- DEPOSIT CARD SECTION END -->
+
+                <!-- RECENT ACTIVITIES SECTION START -->
+                <section class="recent-activities">
+                    <h3>Recent Activities</h3>
+
+
+                    <div class="table-responsive recent-table">
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Activity</th>
+                                    <th>User mail</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/eth.png" alt="">
+                                            <h6>User Login</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>orp*******************@yahoo.ca</p>
+                                    </td>
+                                    <td>
+                                        <p>user login</p>
+                                    </td>
+                                    <td>
+                                        <span>-</span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/eth.png" alt="">
+                                            <h6>Ethereum</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>orp*******************@yahoo.ca</p>
+                                    </td>
+                                    <td>
+                                        <p>User Invested 500 USD in Premium package.</p>
+                                    </td>
+                                    <td>
+                                        <span class="c-cyan">500 USD</span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/eth.png" alt="">
+                                            <h6>Ethereum</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>orp*******************@yahoo.ca</p>
+                                    </td>
+                                    <td>
+                                        <p>User Invested 500 USD in Premium package.</p>
+                                    </td>
+                                    <td>
+                                        <span>-</span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/eth.png" alt="">
+                                            <h6>Ethereum</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>orp*******************@yahoo.ca</p>
+                                    </td>
+                                    <td>
+                                        <p>User Invested 500 USD in Premium package.</p>
+                                    </td>
+                                    <td>
+                                        <span class="c-cyan">500 USD</span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/eth.png" alt="">
+                                            <h6>Ethereum</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>orp*******************@yahoo.ca</p>
+                                    </td>
+                                    <td>
+                                        <p>User Invested 500 USD in Premium package.</p>
+                                    </td>
+                                    <td>
+                                        <span>-</span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/eth.png" alt="">
+                                            <h6>Ethereum</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>orp*******************@yahoo.ca</p>
+                                    </td>
+                                    <td>
+                                        <p>User Invested 500 USD in Premium package.</p>
+                                    </td>
+                                    <td>
+                                        <span class="c-red">500 USD</span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/eth.png" alt="">
+                                            <h6>Ethereum</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>orp*******************@yahoo.ca</p>
+                                    </td>
+                                    <td>
+                                        <p>User Invested 500 USD in Premium package.</p>
+                                    </td>
+                                    <td>
+                                        <span>-</span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/eth.png" alt="">
+                                            <h6>Ethereum</h6>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>orp*******************@yahoo.ca</p>
+                                    </td>
+                                    <td>
+                                        <p>User Invested 500 USD in Premium package.</p>
+                                    </td>
+                                    <td>
+                                        <span class="c-red">500 USD</span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+                <!-- RECENT ACTIVITIES SECTION END -->
+
+                <!-- FOOTER SECIION START -->
+                <footer class="footer">
+                    <p>Copyright © <a href=""> USDFX for Business 2023</a>. All rights Reserved.</p>
+                </footer>
+                <!-- FOOTER SECIION END -->
+
+
+            </section>
+            <!-- DASHBOARD SECTION END -->
+
+
+        </main>
+        <!-- MAIN SECTION END -->
+
+    </div>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

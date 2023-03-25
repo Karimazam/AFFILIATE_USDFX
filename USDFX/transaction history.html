@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History </title>
+    <!-- FONTAWESOME CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/wallet-deposit.css">
+    <link rel="stylesheet" href="assets/css/transaction-history.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- TOP BAR START -->
+        <header class="top-bar d-flex align-items-center">
+            <div class="top-logo">
+                <img src="assets/img/logo.svg" width="140px" alt="">
+            </div>
+
+            <div class="top-content d-flex align-items-center justify-content-between">
+                <h3 class="d-none d-sm-block">Transaction History</h3>
+                <div class="top-right d-flex align-items-center">
+                    <div class="top-search">
+                        <button class="d-lg-none search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="search-container d-none  d-lg-block">
+
+                            <form action="">
+                                <div class="form-group">
+                                    <div class="input-wrap">
+                                        <input type="search" class="form-control" placeholder="Search ">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="notification">
+                        <a href="">
+                            <i class="fa-regular fa-bell"></i>
+                        </a>
+                    </div>
+
+                    <div class="user">
+                        <a href="">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/user.svg" alt="">
+
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <button class="nav-toggle d-block d-xl-none" id="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </div>
+            </div>
+
+        </header>
+        <!-- TOP BAR END -->
+
+
+        <!-- MAIN SECTION START -->
+
+        <main class="main-area">
+
+            <!-- SIDE BAR SECTION START -->
+
+            <aside class="sidebar" id="sideNav">
+
+                <nav class="side-navbar">
+                    <ul>
+                        <li>
+                            <a href="index.html"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> My Profile</a>
+                        </li>
+                        <li>
+                            <a href="wallet deposit.html"><i class="fa-solid fa-table-columns"></i>
+                                Wallet Deposit</a>
+                        </li>
+                        <li>
+                            <a href="exchange.html"><i class="fa-solid fa-table-columns"></i>
+                                Exchange</a>
+                        </li>
+                        <li>
+                            <a href="transaction history.html" class="active"><i class="fa-solid fa-table-columns"></i>
+                                Transaction History</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Transfer Fund</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Chat </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Subscription Plan</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> My Subscription</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> withdrawal</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Affiliates</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Contact Support</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </aside>
+            <!-- SIDE BAR SECTION END -->
+
+            <!-- DASHBOARD SECTION START -->
+            <section class="dashboard">
+
+                <!-- TRANSACTION HISTORY SECTION START -->
+
+                <section class="transaction-history">
+                    <div class="transaction-filter">
+                        <form>
+                            <diV class="row align-items-center">
+                                <diV class="col-lg-10">
+                                    <div class="row">
+
+                                        <diV class="col-lg-4 col-sm-6 mb-4">
+                                            <diV class="form-group">
+                                                <label for="">Transaction Type</label>
+                                                <select class="form-control">
+                                                    <option>All Type</option>
+                                                </select>
+                                            </diV>
+                                        </diV>
+
+                                        <diV class="col-lg-4 col-sm-6 mb-4">
+                                            <diV class="form-group">
+                                                <label for="">Assets Type</label>
+                                                <select class="form-control">
+                                                    <option>All Assets</option>
+                                                </select>
+                                            </diV>
+                                        </diV>
+
+                                        <diV class="col-lg-4 mb-4">
+                                            <diV class="form-group">
+                                                <label for="">Date Range</label>
+                                                <select class="form-control">
+                                                    <option>Last Month</option>
+                                                </select>
+                                            </diV>
+                                        </diV>
+
+                                    </div>
+                                </diV>
+
+                                <diV class="col-lg-2 align-self-end my-4">
+                                    <button>Export History</button>
+                                </diV>
+
+                            </diV>
+                        </form>
+                    </div>
+
+
+                    <div class="transaaction-detail">
+                        <!-- MY WALLET SECTION START -->
+                        <section class="wallet-sec">
+
+                            <div class="table-responsive wallet-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Transaction Type</th>
+                                            <th>Payment Method</th>
+                                            <th>Asset</th>
+                                            <th>Amount</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr class="label-cyan">
+                                            <td>
+                                                <p>17:30 , 15-02-2023</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Exchange</p>
+                                            </td>
+                                            <td>
+                                                <p>Credit Card</p>
+                                            </td>
+
+                                            <td>
+                                                <p>BTC</p>
+                                            </td>
+
+                                            <td>
+                                                <p>₹10,753,374.05</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Completed</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="label-red">
+                                            <td>
+                                                <p>09:30 , 14-02-2023</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Top up crypto</p>
+                                            </td>
+                                            <td>
+                                                <p>Wallet</p>
+                                            </td>
+
+                                            <td>
+                                                <p>ETH</p>
+                                            </td>
+
+                                            <td>
+                                                <p>₹6,423,537.42</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Failed</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="label-cyan">
+                                            <td>
+                                                <p>17:30 , 15-02-2023</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Exchange</p>
+                                            </td>
+                                            <td>
+                                                <p>Credit Card</p>
+                                            </td>
+
+                                            <td>
+                                                <p>BTC</p>
+                                            </td>
+
+                                            <td>
+                                                <p>₹10,753,374.05</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Completed</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="label-red">
+                                            <td>
+                                                <p>09:30 , 14-02-2023</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Top up crypto</p>
+                                            </td>
+                                            <td>
+                                                <p>Wallet</p>
+                                            </td>
+
+                                            <td>
+                                                <p>ETH</p>
+                                            </td>
+
+                                            <td>
+                                                <p>₹6,423,537.42</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Failed</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="label-cyan">
+                                            <td>
+                                                <p>17:30 , 15-02-2023</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Exchange</p>
+                                            </td>
+                                            <td>
+                                                <p>Credit Card</p>
+                                            </td>
+
+                                            <td>
+                                                <p>BTC</p>
+                                            </td>
+
+                                            <td>
+                                                <p>₹10,753,374.05</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Completed</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="label-red">
+                                            <td>
+                                                <p>09:30 , 14-02-2023</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Top up crypto</p>
+                                            </td>
+                                            <td>
+                                                <p>Wallet</p>
+                                            </td>
+
+                                            <td>
+                                                <p>ETH</p>
+                                            </td>
+
+                                            <td>
+                                                <p>₹6,423,537.42</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Failed</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="label-cyan">
+                                            <td>
+                                                <p>17:30 , 15-02-2023</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Exchange</p>
+                                            </td>
+                                            <td>
+                                                <p>Credit Card</p>
+                                            </td>
+
+                                            <td>
+                                                <p>BTC</p>
+                                            </td>
+
+                                            <td>
+                                                <p>₹10,753,374.05</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Completed</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="label-red">
+                                            <td>
+                                                <p>09:30 , 14-02-2023</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Top up crypto</p>
+                                            </td>
+                                            <td>
+                                                <p>Wallet</p>
+                                            </td>
+
+                                            <td>
+                                                <p>ETH</p>
+                                            </td>
+
+                                            <td>
+                                                <p>₹6,423,537.42</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Failed</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="label-cyan">
+                                            <td>
+                                                <p>17:30 , 15-02-2023</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Exchange</p>
+                                            </td>
+                                            <td>
+                                                <p>Credit Card</p>
+                                            </td>
+
+                                            <td>
+                                                <p>BTC</p>
+                                            </td>
+
+                                            <td>
+                                                <p>₹10,753,374.05</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Completed</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="label-red">
+                                            <td>
+                                                <p>09:30 , 14-02-2023</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Top up crypto</p>
+                                            </td>
+                                            <td>
+                                                <p>Wallet</p>
+                                            </td>
+
+                                            <td>
+                                                <p>ETH</p>
+                                            </td>
+
+                                            <td>
+                                                <p>₹6,423,537.42</p>
+                                            </td>
+
+                                            <td>
+                                                <p>Failed</p>
+                                            </td>
+                                        </tr>
+
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <!-- MY WALLET SECTION END -->
+
+                    </div>
+
+
+                </section>
+
+                <!-- TRANSACTION HISTORY SECTION END -->
+
+
+
+                <!-- FOOTER SECIION START -->
+                <footer class="footer">
+                    <p>Copyright © <a href=""> USDFX for Business 2023</a>. All rights Reserved.</p>
+                </footer>
+                <!-- FOOTER SECIION END -->
+
+
+            </section>
+            <!-- DASHBOARD SECTION END -->
+
+
+        </main>
+        <!-- MAIN SECTION END -->
+
+    </div>
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
