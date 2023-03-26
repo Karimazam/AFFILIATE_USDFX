@@ -1,0 +1,81 @@
+.plan-card .dp-card-top h3 {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 22px;
+    color: #F79264;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.plan-card .dp-card-top img {
+    margin-bottom: 2rem;
+    width: 120px;
+}
+
+.plan-card .dp-card-header {
+    border-bottom: 1px solid #EBECED;
+    padding-bottom: 1rem;
+}
+
+.plan-card .dp-card-header .dp-h-left h4 {
+    font-weight: 400;
+    font-size: 4.4rem;
+    color: #F79264;
+    margin-bottom: 1.5rem;
+
+}
+
+.plan-card .dp-card-header .dp-h-right,
+.plan-card .dp-card-header .dp-h-left {
+    text-align: center;
+}
+
+.plan-card .dp-card-header .dp-h-right span,
+.plan-card .dp-card-header .dp-h-left span {
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #A5ADBB;
+}
+
+.plan-card .dp-card-header .dp-h-right h2 {
+    font-weight: 400;
+    font-size: 4.4rem;
+    color: #081F32;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* STARTER */
+.deposit .dp-card.starter h3 {
+    color: #F79264;
+}
+
+
+
+/* SILVER */
+.deposit .dp-card.silver h3 {
+    color: #8288C9;
+}
+
+
+
+/* GOLD */
+.deposit .dp-card.gold h3 {
+    color: #FFDD3A;
+}
+
+
+/* PREMIUM */
+
+.deposit .dp-card.premium h3 {
+    color: #7446EA;
+}
+
+.plan-card ul {
+    padding: 0;
+}
+
+.plan-card .dp-card .dp-card-body a.dp-card-btn {
+    width: 100%;
+}

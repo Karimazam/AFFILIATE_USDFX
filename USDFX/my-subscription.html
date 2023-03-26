@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Subscription</title>
+    <!-- FONTAWESOME CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/wallet-deposit.css">
+    <link rel="stylesheet" href="assets/css/affiliates.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- TOP BAR START -->
+        <header class="top-bar d-flex align-items-center">
+            <div class="top-logo">
+                <img src="assets/img/logo.svg" width="140px" alt="">
+            </div>
+
+            <div class="top-content d-flex align-items-center justify-content-between">
+                <h3 class="d-none d-sm-block">My Subscription</h3>
+                <div class="top-right d-flex align-items-center">
+                    <div class="top-search">
+                        <button class="d-lg-none search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="search-container d-none  d-lg-block">
+
+                            <form action="">
+                                <div class="form-group">
+                                    <div class="input-wrap">
+                                        <input type="search" class="form-control" placeholder="Search ">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="notification dropdown">
+                        <a href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            <i class="fa-regular fa-bell"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <h4>Notification</h4>
+
+                            <a href="">
+
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-table-columns"></i>
+                                    <div>
+                                        <p>Your Identity was successfully Verified</p>
+                                        <span>2 days ago</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="">
+
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-table-columns"></i>
+                                    <div>
+                                        <p>Your Identity was successfully Verified</p>
+                                        <p>Your Identity was successfully Verified</p>
+                                        <span>5 days ago</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="user dropdown">
+                        <a href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/user.svg" alt="">
+
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+
+                    </div>
+
+                    <button class="nav-toggle d-block d-xl-none" id="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </div>
+            </div>
+
+        </header>
+        <!-- TOP BAR END -->
+
+
+        <!-- MAIN SECTION START -->
+
+        <main class="main-area">
+
+            <!-- SIDE BAR SECTION START -->
+
+            <aside class="sidebar" id="sideNav">
+
+                <nav class="side-navbar">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> My Profile</a>
+                        </li>
+                        <li>
+                            <a href="wallet deposit.html"><i class="fa-solid fa-table-columns"></i> Wallet Deposit</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Exchange</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Transaction History</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Transfer Fund</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Chat </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Subscription Plan</a>
+                        </li>
+                        <li>
+                            <a href="my-subscription.html" class="active"><i class="fa-solid fa-table-columns"></i> My
+                                Subscription</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> withdrawal</a>
+                        </li>
+                        <li>
+                            <a href="Affiliates.html"><i class="fa-solid fa-table-columns"></i>
+                                Affiliates</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Contact Support</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </aside>
+            <!-- SIDE BAR SECTION END -->
+
+            <!-- DASHBOARD SECTION START -->
+            <section class="dashboard">
+
+
+
+
+                <div class="transaaction-detail downline">
+                    <!-- Downlines SECTION START -->
+                    <section class="wallet-sec">
+                        <h3 class="mb-4">My Investments</h3>
+
+
+                        <div class="table-responsive wallet-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Package <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Capital <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Date <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Elapses <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Days <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Status <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Earning <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Actions </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <p>Premium </p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 10000</p>
+                                        </td>
+                                        <td>
+                                            <p>28-08-2023 </p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2024</p>
+                                        </td>
+
+                                        <td>
+                                            <p>360</p>
+                                        </td>
+
+                                        <td>
+                                            <p>Active</p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 6234.36</p>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="tb-btn">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Starter </p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 10000</p>
+                                        </td>
+                                        <td>
+                                            <p>28-08-2023 </p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2024</p>
+                                        </td>
+
+                                        <td>
+                                            <p>360</p>
+                                        </td>
+
+                                        <td>
+                                            <p>Active</p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 6234.36</p>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="tb-btn">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Premium </p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 10000</p>
+                                        </td>
+                                        <td>
+                                            <p>28-08-2023 </p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2024</p>
+                                        </td>
+
+                                        <td>
+                                            <p>360</p>
+                                        </td>
+
+                                        <td>
+                                            <p>Active</p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 6234.36</p>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="tb-btn">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Starter </p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 10000</p>
+                                        </td>
+                                        <td>
+                                            <p>28-08-2023 </p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2024</p>
+                                        </td>
+
+                                        <td>
+                                            <p>360</p>
+                                        </td>
+
+                                        <td>
+                                            <p>Active</p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 6234.36</p>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="tb-btn">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Premium </p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 10000</p>
+                                        </td>
+                                        <td>
+                                            <p>28-08-2023 </p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2024</p>
+                                        </td>
+
+                                        <td>
+                                            <p>360</p>
+                                        </td>
+
+                                        <td>
+                                            <p>Active</p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 6234.36</p>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="tb-btn">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Starter </p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 10000</p>
+                                        </td>
+                                        <td>
+                                            <p>28-08-2023 </p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2024</p>
+                                        </td>
+
+                                        <td>
+                                            <p>360</p>
+                                        </td>
+
+                                        <td>
+                                            <p>Active</p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 6234.36</p>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="tb-btn">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Premium </p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 10000</p>
+                                        </td>
+                                        <td>
+                                            <p>28-08-2023 </p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2024</p>
+                                        </td>
+
+                                        <td>
+                                            <p>360</p>
+                                        </td>
+
+                                        <td>
+                                            <p>Active</p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 6234.36</p>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="tb-btn">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Starter </p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 10000</p>
+                                        </td>
+                                        <td>
+                                            <p>28-08-2023 </p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2024</p>
+                                        </td>
+
+                                        <td>
+                                            <p>360</p>
+                                        </td>
+
+                                        <td>
+                                            <p>Active</p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 6234.36</p>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="tb-btn">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Premium </p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 10000</p>
+                                        </td>
+                                        <td>
+                                            <p>28-08-2023 </p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2024</p>
+                                        </td>
+
+                                        <td>
+                                            <p>360</p>
+                                        </td>
+
+                                        <td>
+                                            <p>Active</p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 6234.36</p>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="tb-btn">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Starter </p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 10000</p>
+                                        </td>
+                                        <td>
+                                            <p>28-08-2023 </p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2024</p>
+                                        </td>
+
+                                        <td>
+                                            <p>360</p>
+                                        </td>
+
+                                        <td>
+                                            <p>Active</p>
+                                        </td>
+
+                                        <td>
+                                            <p>USD 6234.36</p>
+                                        </td>
+
+                                        <td>
+                                            <a href="" class="tb-btn">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                    </section>
+                    <!-- Downlines SECTION END -->
+
+                </div>
+
+
+
+                <!-- FOOTER SECIION START -->
+                <footer class="footer">
+                    <p>Copyright © <a href=""> USDFX for Business 2023</a>. All rights Reserved.</p>
+                </footer>
+                <!-- FOOTER SECIION END -->
+
+
+            </section>
+            <!-- DASHBOARD SECTION END -->
+
+
+        </main>
+        <!-- MAIN SECTION END -->
+
+    </div>
+
+    <!-- POPPER JS -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

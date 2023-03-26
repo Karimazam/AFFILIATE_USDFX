@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.signup-container {
+    margin: 0rem 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.signup-container .left-img {
+    position: relative;
+}
+
+
+.signup-container .left-img .s-logo {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+}
+
+.signup-container .left-img img {
+    width: 100%;
+
+
+}
+
+.signup-container .sign-up-wrap {
+    padding: 0 8rem;
+}
+
+.signup-container .sign-up-wrap .signup-logo {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.signup-container .sign-up-wrap .signup-logo img {
+    width: 80%;
+}
+
+.signup-container .sign-up-wrap .signup-form-text {
+    margin: 1.5rem 0;
+}
+
+.signup-container .sign-up-wrap .signup-form-text h5 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 28px;
+    color: #2A353A;
+    margin-bottom: 1rem;
+}
+
+.signup-container .sign-up-wrap p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 19px;
+    color: #717579;
+}
+
+.signup-container .sign-up-wrap form label:not(.terms) {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 19px;
+    color: #717579;
+    margin: .8rem;
+}
+
+.signup-container .sign-up-wrap form input:not([type="checkbox"]) {
+    background: #FFFFFF;
+    border: 1.05344px solid #D5DFE7;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 22px;
+    color: #5B5E81;
+    padding: 1.5rem;
+    height: 47px;
+    margin-bottom: 1.5rem;
+}
+
+.signup-container .sign-up-wrap form label.terms {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 18px;
+    color: #717579;
+    cursor: pointer;
+}
+
+.signup-container .sign-up-wrap form input[type='checkbox'] {
+    max-width: 18px !important;
+    max-height: 18px !important;
+    min-width: 18px !important;
+    min-height: 18px !important;
+    margin-right: .8rem;
+    accent-color: #546BEA;
+}
+
+.signup-container .sign-up-wrap form .signup-btn button {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 22px;
+    padding: 1rem;
+    color: #FFFFFF;
+    background: #546BEA;
+    border-radius: 8px;
+    border: 1px solid #546BEA;
+    margin: 1.9rem 0;
+    transition: all .4s ease-in-out;
+}
+
+.signup-container .sign-up-wrap form .signup-btn button:hover {
+    /* color: #546BEA;
+    background-color: #fff; */
+    opacity: 0.93;
+}
+
+.signup-container .sign-up-wrap form .signup-btn h6 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 19px;
+    color: #717579;
+    margin: .3rem 0;
+}
+
+.signup-container .sign-up-wrap form .signup-btn button.btn-outline {
+    color: #546BEA;
+    background-color: transparent;
+}
+
+
+
+.signup-container .sign-up-wrap form .signup-btn button.btn-outline i {
+    margin-right: .4rem;
+    font-size: inherit;
+    color: inherit;
+}
+
+
+.signup-container .sign-up-wrap form .signup-btn button.btn-outline:hover {
+    color: #fff;
+    background-color: #546BEA;
+}
+
+.signup-container .sign-up-wrap form p a {
+    font-weight: 600;
+    color: #546BEA;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+
+.signup-container .sign-up-wrap form p a:hover {
+    text-decoration: underline;
+}
+
+
+.otp-in-wrap {
+    position: relative;
+}
+
+.otp-in-wrap a {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #5B5E81;
+}
+
+.signup-container .sign-up-wrap form .signup-btn.otp-btns button {
+    width: calc(50% - 5px);
+}
+
+.signup-container .sign-up-wrap form .signup-btn.otp-btns button.bg-grey {
+    border-color: #EFEFF4;
+    background-color: #EFEFF4;
+    color: #666666;
+}
+
+
+
+@media screen and (max-width: 1199px) {
+    .signup-container .sign-up-wrap {
+        padding: 0 1rem;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+    .signup-container .left-img img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .signup-container .sign-up-wrap {
+        padding: 0 8rem;
+        margin: 5rem 0;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .signup-container .sign-up-wrap {
+        padding: 0 1rem;
+        margin: 2rem 0;
+
+    }
+
+    .signup-container .sign-up-wrap .signup-logo {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+}

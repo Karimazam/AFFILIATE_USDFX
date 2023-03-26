@@ -1,0 +1,198 @@
+.left-content {
+    background: rgba(84, 107, 234, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 3rem;
+}
+
+.or {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.or p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #6E798C;
+    position: relative;
+    text-align: center;
+}
+
+.or p:before,
+.or p:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(50% - 20px);
+    height: 1px;
+    background: #C7C7CC;
+}
+
+.or p::before {
+    left: 0;
+}
+
+.or p::after {
+    right: 0;
+}
+
+.right-content button.light-bg {
+    color: #546BEA;
+    background: rgba(84, 107, 234, 0.1);
+}
+
+
+.table-filter {
+    margin: 2rem 0;
+}
+
+.table-filter .rigjt-s,
+.table-filter .left-s {
+    margin: 1rem;
+}
+
+.table-filter .left-s .input-wrap {
+    max-width: 320px;
+    height: 38px;
+    position: relative;
+}
+
+.table-filter .left-s .input-wrap i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: #C7C7CC;
+    outline: none;
+}
+
+.table-filter .left-s .input-wrap input {
+    border: 1px solid #8888;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    color: #C7C7CC;
+    padding: 1.5rem;
+    padding-left: 4rem;
+}
+
+.table-filter .right-s p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333333;
+    margin: 0 .8rem;
+}
+
+.table-filter .right-s input,
+.table-filter .right-s select {
+    width: 65px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 18px;
+    color: #333333;
+    padding: 0 .8rem;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+}
+
+.table-filter .right-s select option {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 18px;
+    color: #333333;
+}
+
+.transaaction-detail.downline table thead tr th {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #000000;
+    white-space: nowrap;
+
+}
+
+.transaaction-detail.downline table tbody tr td {
+    min-width: 100px;
+}
+
+.transaaction-detail.downline table tbody tr td p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 16px;
+    color: #000000;
+}
+
+.transaaction-detail.downline table tbody tr td a.tb-btn {
+    width: 28px;
+    height: 20px;
+    display: inline-block;
+    background: #DDE1FB;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+}
+
+.transaaction-detail.downline table tbody tr td a.tb-btn:hover {
+    color: #fff;
+    background-color: #546BEA;
+}
+
+
+.ft-filter nav ul li {
+    margin: .2rem;
+
+}
+
+.ft-filter nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.ft-filter nav ul li a.active {
+    border: 1px solid #F1F1F1;
+
+    color: #546BEA;
+    background-color: #DDE1FB;
+}
+
+@media screen and (max-width: 575px) {
+
+    .ft-filter nav ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+        border-radius: 8px;
+        width: 27px;
+        height: 27px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #333333;
+    }
+
+    .refferal-section img {
+        width: 70%;
+    }
+
+}

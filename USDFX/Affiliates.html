@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliates</title>
+    <!-- FONTAWESOME CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/wallet-deposit.css">
+    <link rel="stylesheet" href="assets/css/affiliates.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- TOP BAR START -->
+        <header class="top-bar d-flex align-items-center">
+            <div class="top-logo">
+                <img src="assets/img/logo.svg" width="140px" alt="">
+            </div>
+
+            <div class="top-content d-flex align-items-center justify-content-between">
+                <h3 class="d-none d-sm-block">My Subscription</h3>
+                <div class="top-right d-flex align-items-center">
+                    <div class="top-search">
+                        <button class="d-lg-none search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="search-container d-none  d-lg-block">
+
+                            <form action="">
+                                <div class="form-group">
+                                    <div class="input-wrap">
+                                        <input type="search" class="form-control" placeholder="Search ">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="notification dropdown">
+                        <a href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            <i class="fa-regular fa-bell"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <h4>Notification</h4>
+
+                            <a href="">
+
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-table-columns"></i>
+                                    <div>
+                                        <p>Your Identity was successfully Verified</p>
+                                        <span>2 days ago</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="">
+
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-table-columns"></i>
+                                    <div>
+                                        <p>Your Identity was successfully Verified</p>
+                                        <p>Your Identity was successfully Verified</p>
+                                        <span>5 days ago</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="user dropdown">
+                        <a href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/user.svg" alt="">
+
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+
+                    </div>
+
+                    <button class="nav-toggle d-block d-xl-none" id="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </div>
+            </div>
+
+        </header>
+        <!-- TOP BAR END -->
+
+
+        <!-- MAIN SECTION START -->
+
+        <main class="main-area">
+
+            <!-- SIDE BAR SECTION START -->
+
+            <aside class="sidebar" id="sideNav">
+
+                <nav class="side-navbar">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> My Profile</a>
+                        </li>
+                        <li>
+                            <a href="wallet deposit.html"><i class="fa-solid fa-table-columns"></i> Wallet Deposit</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Exchange</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Transaction History</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Transfer Fund</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Chat </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Subscription Plan</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> My Subscription</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> withdrawal</a>
+                        </li>
+                        <li>
+                            <a href="Affiliates.html" class="active"><i class="fa-solid fa-table-columns"></i>
+                                Affiliates</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Contact Support</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-solid fa-table-columns"></i> Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </aside>
+            <!-- SIDE BAR SECTION END -->
+
+            <!-- DASHBOARD SECTION START -->
+            <section class="dashboard">
+
+
+
+                <!-- REFFERAL SECTION START -->
+                <div class="refferal-section">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 col-xl-12 left-content">
+                            <div class="row">
+                                <div class="col-sm-7 col-md-5 col-lg-4">
+                                    <h3>Invite friends and Earn</h3>
+                                    <p>met minim mollit non deserunt ullamco est sit aliqua
+                                        dolor do amet sit aliqua dolor.</p>
+                                    <a href="">Go to Refer & Earn Page</a>
+                                </div>
+
+                                <div class="col-sm-4 col-md-3 ms-auto text-center">
+                                    <img src="assets/img/aff.svg" width="100%" alt="">
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-12 col-lg-12 right-content">
+                            <div class="copy-link">
+                                <form>
+                                    <div class="form-group row g-2 g-sm-3">
+                                        <div class="col-8 col-sm-10">
+                                            <input class="form-control" type="text"
+                                                value="https://usdfx.org/ref/usdfx1234">
+                                        </div>
+                                        <div class="col-4 col-sm-2">
+                                            <button class="copy-btn">Copy link</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                                <div class="or">
+                                    <p>OR</p>
+                                </div>
+                                <form>
+                                    <div class="form-group row g-2 g-sm-3">
+                                        <div class="col-8 col-sm-10">
+                                            <input class="form-control" type="text"
+                                                placeholder="Enter your friend email">
+                                        </div>
+                                        <div class="col-4 col-sm-2">
+                                            <button class="copy-btn light-bg">Send</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="share-link text-center row g-2 g-sm-3">
+                                <div class="col-4">
+                                    <a href=""><img src="assets/img/fb-icon.svg" alt=""> Share</a>
+                                </div>
+                                <div class="col-4">
+                                    <a href=""><img src="assets/img/tw.svg" alt=""> Tweet</a>
+                                </div>
+                                <div class="col-4">
+                                    <a href=""><img src="assets/img/linkedinsvg.svg" alt=""> Post</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- REFFERAL SECTION END -->
+
+
+                <div class="transaaction-detail downline">
+                    <!-- Downlines SECTION START -->
+                    <section class="wallet-sec">
+                        <h3>Downlines</h3>
+
+                        <div class="table-filter">
+                            <form action="">
+                                <div class=" flex-wrap d-flex align-items-center justify-content-between">
+
+                                    <div class="left-s">
+                                        <div class="input-wrap">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                            <input type="text" class="form-control" name="" id="" placeholder="Search">
+                                        </div>
+                                    </div>
+
+                                    <div class="right-s d-flex align-items-center">
+                                        <p>Show</p>
+                                        <select>
+                                            <option>10</option>
+                                        </select>
+                                        <p>Entries</p>
+
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="table-responsive wallet-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name <img src="assets/img/dn.png" alt=""> </th>
+                                        <th>Username <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Sponsor By <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Level <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Incentives <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Amount Earned <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Investments <img src="assets/img/dnl.png" alt=""> </th>
+                                        <th>Date Registred <img src="assets/img/dnl.png" alt=""> </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <p>Harry Page Leboskii Debb </p>
+                                        </td>
+
+                                        <td>
+                                            <p>UsdfxShareholder@123</p>
+                                        </td>
+                                        <td>
+                                            <p>Harry Page Leboskii Debb </p>
+                                        </td>
+
+                                        <td>
+                                            <p>8</p>
+                                        </td>
+
+                                        <td>
+                                            <p>2.50%</p>
+                                        </td>
+
+                                        <td>
+                                            <p>26371.00</p>
+                                        </td>
+
+                                        <td>
+                                            <p>50000.00</p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2023</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Harry Page Leboskii Debb </p>
+                                        </td>
+
+                                        <td>
+                                            <p>UsdfxShareholder@123</p>
+                                        </td>
+                                        <td>
+                                            <p>Harry Page Leboskii Debb </p>
+                                        </td>
+
+                                        <td>
+                                            <p>8</p>
+                                        </td>
+
+                                        <td>
+                                            <p>2.50%</p>
+                                        </td>
+
+                                        <td>
+                                            <p>26371.00</p>
+                                        </td>
+
+                                        <td>
+                                            <p>50000.00</p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2023</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Harry Page Leboskii Debb </p>
+                                        </td>
+
+                                        <td>
+                                            <p>UsdfxShareholder@123</p>
+                                        </td>
+                                        <td>
+                                            <p>Harry Page Leboskii Debb </p>
+                                        </td>
+
+                                        <td>
+                                            <p>8</p>
+                                        </td>
+
+                                        <td>
+                                            <p>2.50%</p>
+                                        </td>
+
+                                        <td>
+                                            <p>26371.00</p>
+                                        </td>
+
+                                        <td>
+                                            <p>50000.00</p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2023</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <p>Harry Page Leboskii Debb </p>
+                                        </td>
+
+                                        <td>
+                                            <p>UsdfxShareholder@123</p>
+                                        </td>
+                                        <td>
+                                            <p>Harry Page Leboskii Debb </p>
+                                        </td>
+
+                                        <td>
+                                            <p>8</p>
+                                        </td>
+
+                                        <td>
+                                            <p>2.50%</p>
+                                        </td>
+
+                                        <td>
+                                            <p>26371.00</p>
+                                        </td>
+
+                                        <td>
+                                            <p>50000.00</p>
+                                        </td>
+
+                                        <td>
+                                            <p>28-08-2023</p>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-filter ">
+                            <div
+                                class="ft-filter d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between ">
+                                <div></div>
+
+                                <nav aria-label="Page navigation example mx-auto">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="" href="#" tabindex="-1">
+                                                << </a>
+                                        </li>
+
+                                        <li class="page-item"><a class="" href="#">
+                                                < </a>
+                                        </li>
+                                        <li class="page-item"><a class=" active" href="#">1</a></li>
+                                        <li class="page-item"><a class="" href="#">2</a></li>
+                                        <li class="page-item"><a class="" href="#">3</a></li>
+                                        <li class="page-item"><a class="" href="#">...</a></li>
+                                        <li class="page-item"><a class="" href="#">10</a></li>
+                                        <li class="page-item"><a class="" href="#">></a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">>></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+
+
+                                <div class="right-s d-flex align-items-center">
+                                    <p>Page</p>
+                                    <input type="number" value="1">
+                                    <p>of 73</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <!-- Downlines SECTION END -->
+
+                </div>
+
+
+
+                <!-- FOOTER SECIION START -->
+                <footer class="footer">
+                    <p>Copyright © <a href=""> USDFX for Business 2023</a>. All rights Reserved.</p>
+                </footer>
+                <!-- FOOTER SECIION END -->
+
+
+            </section>
+            <!-- DASHBOARD SECTION END -->
+
+
+        </main>
+        <!-- MAIN SECTION END -->
+
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
